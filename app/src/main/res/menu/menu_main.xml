@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.calculator30.MainActivity">
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="帮助区"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ascii"
+        android:orderInCategory="100"
+        android:title="进制转换区"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/trans"
+        android:orderInCategory="100"
+        android:title="单位换算区"
+        app:showAsAction="never" />
+
+</menu>
