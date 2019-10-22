@@ -20,9 +20,6 @@ import static java.lang.System.exit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    // 这是一个类，这是声明变量的地方，咋可能调用方法
-    // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-
     private TextView resultView;
     private EditText input;
 
@@ -52,10 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,"这是帮助区",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ascii:
-
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, asc.class);
+                startActivity(intent);
                 break;
             case R.id.trans:
-
+                Intent intent1 = new Intent();
+                intent1.setClass(MainActivity.this, tran.class);
+                startActivity(intent1);
                 break;
         }
         return true;
@@ -270,8 +271,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         sum = sum + (c - '0') / q;
                         q = q * 10;
                     }
+
                     c = str.charAt(i);
                     i++;
+
                 }
                 flag = false;
                 opndStack.push(sum);

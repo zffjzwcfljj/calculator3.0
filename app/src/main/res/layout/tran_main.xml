@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原单位"
+        android:textSize="35sp"
+        android:layout_marginTop="35dp"/>
+
+    <RadioGroup
+        android:id="@+id/group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/before"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/cm11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="cm" />
+
+        <RadioButton
+            android:id="@+id/dm11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="dm" />
+
+        <RadioButton
+            android:id="@+id/m11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="m" />
+
+        <RadioButton
+            android:id="@+id/cm22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="cm^2" />
+
+        <RadioButton
+            android:id="@+id/dm22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="dm^2" />
+
+        <RadioButton
+            android:id="@+id/m22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="m^2" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_below="@id/group1"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="转换后单位"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="cm" />
+
+        <RadioButton
+            android:id="@+id/dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="dm" />
+
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="m" />
+
+        <RadioButton
+            android:id="@+id/cm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="cm^2" />
+
+        <RadioButton
+            android:id="@+id/dm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="dm^2" />
+
+        <RadioButton
+            android:id="@+id/m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="m^2" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_below="@id/group2"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="转换"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="返回"
+        android:textSize="20dp"/>
+</LinearLayout>
