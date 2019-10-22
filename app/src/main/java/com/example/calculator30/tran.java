@@ -75,24 +75,24 @@ public class tran  extends AppCompatActivity implements View.OnClickListener{
     }
 
     @Override
-    public void onClick(View v){
+    public void onClick(View v) {
         str = input.getText().toString();
         input.setText(str);
         switch(v.getId()) {
             case R.id.button:
-                if (flag==1 && flag2==2) output.setText(Integer.getInteger(str)/10);
-                else if (flag==1 && flag2==3) output.setText(Integer.getInteger(str)/100);
-                else if (flag==2 && flag2==1) output.setText(Integer.getInteger(str)*10);
-                else if (flag==2 && flag2==3) output.setText(Integer.getInteger(str)/10);
-                else if (flag==3 && flag2==1) output.setText(Integer.getInteger(str)*100);
-                else if (flag==3 && flag2==2) output.setText(Integer.getInteger(str)*10);
+                if (flag==1 && flag2==2) output.setText(String.valueOf(Double.parseDouble(str)/10));
+                else if (flag==1 && flag2==3) output.setText(String.valueOf(Double.parseDouble(str)/100));
+                else if (flag==2 && flag2==1) output.setText(String.valueOf(Double.parseDouble(str)*10));
+                else if (flag==2 && flag2==3) output.setText(String.valueOf(Double.parseDouble(str)/10));
+                else if (flag==3 && flag2==1) output.setText(String.valueOf(Double.parseDouble(str)*100));
+                else if (flag==3 && flag2==2) output.setText(String.valueOf(Double.parseDouble(str)*10));
 
-                else if (flag==4 && flag2==5) output.setText(Integer.getInteger(str)/100);
-                else if (flag==4 && flag2==6) output.setText(Integer.getInteger(str)/10000);
-                else if (flag==5 && flag2==4) output.setText(Integer.getInteger(str)*100);
-                else if (flag==5 && flag2==6) output.setText(Integer.getInteger(str)/100);
-                else if (flag==6 && flag2==4) output.setText(Integer.getInteger(str)*10000);
-                else if (flag==6 && flag2==5) output.setText(Integer.getInteger(str)*100);
+                else if (flag==4 && flag2==5) output.setText(String.valueOf(Double.parseDouble(str)/100));
+                else if (flag==4 && flag2==6) output.setText(String.valueOf(Double.parseDouble(str)/10000));
+                else if (flag==5 && flag2==4) output.setText(String.valueOf(Double.parseDouble(str)*100));
+                else if (flag==5 && flag2==6) output.setText(String.valueOf(Double.parseDouble(str)/100));
+                else if (flag==6 && flag2==4) output.setText(String.valueOf(Double.parseDouble(str)*10000));
+                else if (flag==6 && flag2==5) output.setText(String.valueOf(Double.parseDouble(str)*100));
                 break;
 
             case R.id.button2:
@@ -100,7 +100,6 @@ public class tran  extends AppCompatActivity implements View.OnClickListener{
                 break;
         }
     }
-
 
 
 }
