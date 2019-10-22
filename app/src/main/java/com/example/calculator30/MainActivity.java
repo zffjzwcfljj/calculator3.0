@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.help:
-
                 Toast.makeText(MainActivity.this,"这是帮助区",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ascii:

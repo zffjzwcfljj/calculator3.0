@@ -68,17 +68,17 @@ public class asc extends AppCompatActivity implements View.OnClickListener{
         input.setText(str);
         switch(v.getId()) {
             case R.id.button:
-                if (flag==1 && flag2==2) output.setText(Integer.valueOf(str,2).toString());
-                else if (flag==1 && flag2==3) output.setText(Integer.valueOf(str,8).toString());
-                else if (flag==1 && flag2==4) output.setText(Integer.valueOf(str,16).toString());
+                if (flag==1 && flag2==2) output.setText(Integer.toOctalString(Integer.parseInt(str, 2)));
+                else if (flag==1 && flag2==3) output.setText(Integer.valueOf(str,2).toString());
+                else if (flag==1 && flag2==4) output.setText(Integer.toHexString(Integer.parseInt(str, 2)));
 
                 else if (flag==2 && flag2==1) output.setText(Integer.toBinaryString(Integer.valueOf(str,8)));
                 else if (flag==2 && flag2==3) output.setText(Integer.valueOf(str,8).toString());
                 else if (flag==2 && flag2==4) output.setText(Integer.toHexString(Integer.valueOf(str,8)));
 
-                else if (flag==3 && flag2==1) output.setText(Integer.toBinaryString(Integer.getInteger(str)));
-                else if (flag==3 && flag2==2) output.setText(Integer.toOctalString(Integer.getInteger(str)));
-                else if (flag==3 && flag2==4) output.setText(Integer.toHexString(Integer.getInteger(str)));
+                else if (flag==3 && flag2==1) output.setText(Integer.toBinaryString(Integer.parseInt(str)));
+                else if (flag==3 && flag2==2) output.setText(Integer.toOctalString(Integer.parseInt(str)));
+                else if (flag==3 && flag2==4) output.setText(Integer.toHexString(Integer.parseInt(str)));
 
                 else if (flag==4 && flag2==1) output.setText(Integer.toBinaryString(Integer.valueOf(str,16)));
                 else if (flag==4 && flag2==2) output.setText(Integer.toOctalString(Integer.valueOf(str,16)));

@@ -1,2 +1,7 @@
-出现的问题：
-在单位换算模块中，输出会出现错误。是因为读入的是String型，但在计算时，需要用到的是double型。于是就需要先用Double.parseDouble(str)进行转换，之后再输出又需要转换成String型，String.valueOf()；在最开始写的时候，没考虑到需要进行转换才可以计算后输出。
+除去算法外 明显的问题：
+* 1. 在单位换算模块中，输出会出现错误。是因为读入的是String型，但在计算时，需要用到的是double型。于是就需要先用Double.parseDouble(str)进行转换，之后再输出又需要转换成String型，String.valueOf()；在最开始写的时候，没考虑到需要进行转换才可以计算后输出。
+
+* 2. Integer.getInteger和Integer.parseInt的区别
+Integer.getInteger 根据指定的名称得到系统属性的整数值
+Integer.parseInt 返回一个int的值
+在String转换为Int型时用第二种，第一种就会出现错误
