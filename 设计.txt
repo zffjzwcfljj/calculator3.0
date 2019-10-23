@@ -10,6 +10,9 @@ android:layout_alignParentBottom
 vertical
 垂直居中
 
+android:layout_marginTop
+距离上边距
+
 根据物理感应器决定显示方向，它取决于用户如何持有设备
 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
 
