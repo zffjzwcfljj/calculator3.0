@@ -42,4 +42,4 @@ onOptionsItemSelected()在选择菜单项后，处理菜单选择事件
 int double String之间需要相互转换
 当进制 单位选择同一个时，Toast消息提示
 
-
+* 7. 每一个活动，需要在 manifest.xml 里添加
