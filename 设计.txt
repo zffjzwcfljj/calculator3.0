@@ -37,5 +37,6 @@ onOptionsItemSelected()在选择菜单项后，处理菜单选择事件
 
 * 6. 进制转换 单位转换
 int double String之间需要相互转换
+当进制 单位选择同一个时，Toast消息提示
 
 

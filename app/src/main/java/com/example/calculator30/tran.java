@@ -7,6 +7,7 @@ package com.example.calculator30;
         import android.widget.PopupMenu;
         import android.widget.RadioButton;
         import android.widget.TextView;
+        import android.widget.Toast;
 
         import androidx.appcompat.app.AppCompatActivity;
 
@@ -93,6 +94,13 @@ public class tran  extends AppCompatActivity implements View.OnClickListener{
                 else if (flag==5 && flag2==6) output.setText(String.valueOf(Double.parseDouble(str)/100));
                 else if (flag==6 && flag2==4) output.setText(String.valueOf(Double.parseDouble(str)*10000));
                 else if (flag==6 && flag2==5) output.setText(String.valueOf(Double.parseDouble(str)*100));
+
+                else if (flag==1 && flag2==1) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==2 && flag2==2) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==3 && flag2==3) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==4 && flag2==4) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==5 && flag2==5) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==6 && flag2==6) Toast.makeText(tran.this,"单位未转换",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.button2:

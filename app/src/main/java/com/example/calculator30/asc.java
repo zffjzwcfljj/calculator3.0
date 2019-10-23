@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -83,6 +84,11 @@ public class asc extends AppCompatActivity implements View.OnClickListener{
                 else if (flag==4 && flag2==1) output.setText(Integer.toBinaryString(Integer.valueOf(str,16)));
                 else if (flag==4 && flag2==2) output.setText(Integer.toOctalString(Integer.valueOf(str,16)));
                 else if (flag==4 && flag2==3) output.setText(Integer.valueOf(str,16).toString());
+
+                else if (flag==1 && flag2==1) Toast.makeText(asc.this,"进制未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==2 && flag2==2) Toast.makeText(asc.this,"进制未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==3 && flag2==3) Toast.makeText(asc.this,"进制未转换",Toast.LENGTH_SHORT).show();
+                else if (flag==4 && flag2==4) Toast.makeText(asc.this,"进制未转换",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.button2:
